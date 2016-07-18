@@ -49,7 +49,8 @@ import org.nuxeo.runtime.test.runner.LocalDeploy;
  */
 @RunWith(FeaturesRunner.class)
 @Features(RenditionFeature.class)
-@LocalDeploy({ "org.nuxeo.ecm.platform.rendition.core:test-renditionprovider-contrib.xml" })
+@LocalDeploy({ "org.nuxeo.ecm.platform.rendition.core:test-renditionprovider-contrib.xml",
+        "org.nuxeo.ecm.platform.rendition.core:test-soffice-env-contrib.xml" })
 public class TestRenditionProvider {
 
     public static final String PDF_RENDITION_DEFINITION = "pdf";

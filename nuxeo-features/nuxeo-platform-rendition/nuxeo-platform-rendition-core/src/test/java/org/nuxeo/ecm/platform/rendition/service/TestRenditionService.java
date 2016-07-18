@@ -40,8 +40,6 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.stream.Collectors;
 import java.util.zip.ZipInputStream;
@@ -95,7 +93,8 @@ import org.nuxeo.runtime.transaction.TransactionHelper;
 @RunWith(FeaturesRunner.class)
 @Features(RenditionFeature.class)
 @LocalDeploy({ "org.nuxeo.ecm.platform.rendition.core:test-rendition-contrib.xml",
-        "org.nuxeo.ecm.platform.rendition.core:test-lazy-rendition-contrib.xml" })
+        "org.nuxeo.ecm.platform.rendition.core:test-lazy-rendition-contrib.xml",
+        "org.nuxeo.ecm.platform.rendition.core:test-soffice-env-contrib.xml" })
 public class TestRenditionService {
 
     public static final String RENDITION_CORE = "org.nuxeo.ecm.platform.rendition.core";
