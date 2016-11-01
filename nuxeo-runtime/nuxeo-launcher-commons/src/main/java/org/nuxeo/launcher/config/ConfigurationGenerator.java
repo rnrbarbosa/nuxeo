@@ -77,7 +77,6 @@ import org.nuxeo.common.codec.Crypto;
 import org.nuxeo.common.codec.CryptoProperties;
 import org.nuxeo.common.utils.TextTemplate;
 import org.nuxeo.launcher.commons.DatabaseDriverException;
-import org.nuxeo.launcher.config.JVMVersion.UpTo;
 import org.nuxeo.log4j.Log4JHelper;
 
 import freemarker.core.ParseException;
@@ -913,10 +912,6 @@ public class ConfigurationGenerator {
 
     public List<File> getIncludedTemplates() {
         return includedTemplates;
-    }
-
-    public static void main(String[] args) throws ConfigurationException {
-        new ConfigurationGenerator().run();
     }
 
     /**
